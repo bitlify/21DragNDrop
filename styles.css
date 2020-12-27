@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.logo:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 15px 15px -10px;
+}
+
+.icon-container {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 48px;
+}
+
+.fa-instagram {
+    color: #343434;
+    transition: 0.3s ease-out;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px #000;
+    background-color: #fff;
+}
+
+.fill {
+    background-image: url("https://source.unsplash.com/random/150x150");
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
